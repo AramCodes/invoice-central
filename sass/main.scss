@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import "_reset";
+@import "_variables";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: $greyLight;
+}
+
+/* Side Bar/ Navigation */
+
+#sideMenu {
+    background-color: $purpleLight;
+    width: 280px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    
+}
+
+#sideMenu nav {
+    padding-top: 100px
+}
+
+#sideMenu nav a {
+    display: block;
+    color: $greyDark;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 300;
+    transition: all .3s ease-in-out;
+    
+    &:hover {
+        background-color: $purpleDark;
+        border-left: 5px solid $greenNeon;
+        padding: 15px 30px 15px 25px;
+        
+        .fa-regular,
+        .fa-solid {
+            color: $greenNeon;
+        }
+    }
+    
+    .fa-regular,
+    .fa-solid {
+        color: $greyDark;
+        font-size: 1rem;
+        margin-right: 0.8em;
+        display: inline-block;
+        width: 30px;
+        position: relative;
+        top: 2px;
+    }
+    
+    &.active {
+        background-color: $purpleDark;
+        border-left: 5px solid $greenNeon;
+        padding: 15px 30px 15px 25px;
+        
+        .fa-regular,
+        .fa-solid {
+            color: $greenNeon;
+        }
+    }
+    
+}
